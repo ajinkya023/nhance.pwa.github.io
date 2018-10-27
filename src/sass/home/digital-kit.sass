@@ -2,7 +2,7 @@
   .swiper-digital-kit
     padding: 40px 36px
     .swiper-wrapper
-      transition-duration: 500ms !important
+      transition-duration: 200ms !important
     .swiper-slide
       background-color: #eeeeee
       +tr
@@ -15,9 +15,11 @@
         transform: scale(1)
   .swiper-scroll
     background-color: #f5f5f5
-    padding-right: 60px
+    padding: 20px 0
+    padding-left: 0
+    padding-right: 80px
     .swiper-slide
-      background-color: none
+      background: none
       transform: scale(1)
       border-radius: 0px
       box-shadow: none
@@ -69,23 +71,15 @@
           font-weight: normal
     &__function
       width: 100%
-      overflow: hidden
-      &__content
-        display: flex
-        justify-content: space-between
-        padding: 30px
-        height: 125px
-        box-sizing: border-box
-        min-width: 520px
-        width: 100%
-        background-color: #f5f5f5
-        overflow-x: scroll
+      display: flex
+      justify-content: flex-end
       &__img
         height: 33px
         +center
+        margin-bottom: 18px
       a
         font-size: 18px
-        display: flex
+        display: inline-flex
         flex-direction: column
         justify-content: space-between
         align-items: center

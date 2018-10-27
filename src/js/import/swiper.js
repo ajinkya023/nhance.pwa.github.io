@@ -5,6 +5,7 @@ import Swiper from 'swiper';
 var swiper = new Swiper('.swiper-digital-kit', {
   slidesPerView: 1,
   spaceBetween: 10,
+  speed: 700,
   pagination: {
     el: '.swiper-pagination-digital-kit',
     type: 'fraction',
