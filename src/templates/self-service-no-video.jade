@@ -1,0 +1,23 @@
+---
+title: Self-service
+---
+extends layouts/_layout
+block content
+  .self-service
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Self Service (DIY)
+    form.self-service__form
+      .self-service__form__block
+        a(href="#")
+          i.icon.icon-search
+        input(type="text" placeholder="Search for Videos and Manuals")
+    .self-service__list
+      h2 videos
+      .swiper-container
+        p No brand videos available
+    .self-service__list
+      h2 documents
+      .swiper-container
+        p No brand videos available

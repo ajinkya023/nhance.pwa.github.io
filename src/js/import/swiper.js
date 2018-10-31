@@ -20,8 +20,14 @@ var swiper2 = new Swiper('.swiper-scroll', {
   freeMode: true,
   slidesPerView: 3,
   spaceBetween: 30,
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  mousewheel: true,
+});
+//video
+var swiper2 = new Swiper('.swiper-video', {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  freeMode: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
   mousewheel: true,
 });

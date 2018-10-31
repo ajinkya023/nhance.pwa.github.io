@@ -1,0 +1,70 @@
+---
+title: Profile
+---
+extends layouts/_layout
+block content
+  .profile
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Profile Management
+    .profile__title
+      a(href="#photo" data-pop).profile__title__photo
+        img(src="img/profile/profile-pic.png", alt="")
+      .profile__title__name
+        p Vaishakh Piltholi
+    form.profile__form
+      .form
+        h2 Customer Type
+        p Individual
+        .form__input
+          span Name
+          input(type="text" name="name" placeholder="Vaishakh Pilatholi")
+        h2 Gender
+        .form__radio
+          .form__radio__block
+            input(type="radio" name="radio" id="radio-1" checked)
+            label(for="radio-1") Male
+          .form__radio__block
+            input(type="radio" name="radio" id="radio-2")
+            label(for="radio-2") Female
+        .form__input
+          input(type="text" id="date" name="date" placeholder="18/12/1989")
+          label(for="date")
+            img(src="img/profile/calendar.png", alt="")
+        .form__phone
+          .form__phone__select
+            select
+              option(value="1") +91
+              option(value="2") +92
+              option(value="3") +93
+          .form__phone__number
+            input(type="number" name="phone" placeholder="Mobile")
+        .form__input
+          input(type="email" name="email" placeholder="Email")
+        .form__input
+          input(type="text" name="address" placeholder="Address")
+        .form__input
+          input(type="text" name="city" placeholder="City")
+        .form__input
+          input(type="text" name="code" placeholder="Zip/Pin Code")
+      .profile__form__submit
+        input(type="submit" value="submit")
+    .pop-up-bg
+    .profile__pop-up.pop-up#photo
+      .profile__pop-up__title
+        a(href="#").close Cancel
+        h3 Profile Photo
+      ul
+        li
+          a(href="#") 
+            img(src="img/profile/gallery.png", alt="")
+            | Choose From Library
+        li
+          a(href="#") 
+            img(src="img/profile/camera.png", alt="")
+            | Take a Photo
+        li
+          a(href="#") 
+            img(src="img/profile/delete.png", alt="")
+            | Delete Photo

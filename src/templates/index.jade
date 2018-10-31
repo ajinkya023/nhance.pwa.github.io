@@ -1,8 +1,10 @@
 ---
 title: Index Page
+outClass: home-page
 ---
 extends layouts/_layout
 block content
+  include ./partials/_header
   .digital-kit
     .swiper-container.swiper-digital-kit
       .swiper-pagination.swiper-pagination-digital-kit
@@ -118,3 +120,4 @@ block content
                       .slide__product__function__img
                         img(src="img/accessories.png", alt="")
                       | Digi Locker
+  include ./partials/_footer
