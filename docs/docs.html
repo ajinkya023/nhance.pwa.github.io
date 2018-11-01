@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Docs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=540, minimum-scale=0.3, maximum-scale=3, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <div class="docs">
+        <div class="block__back"><a href="#"><i class="icon icon-arrow-right"></i></a>
+          <h1>Docs Box</h1>
+        </div>
+        <div class="docs__tabs tabs">
+          <div class="tabs__caption">
+            <ul>
+              <li class="active">Invoices</li>
+              <li>documents</li>
+            </ul>
+          </div>
+          <div class="tabs__content active">
+            <h3>invoices</h3>
+            <div class="docs__content"><a href="#" class="docs__block">
+                <div class="docs__block__img"></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a><a href="#" class="docs__block">
+                <div class="docs__block__img"></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a><a href="#" class="docs__block">
+                <div class="docs__block__img"><img src="img/tick-mark.png" alt=""></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a></div>
+            <h3>my invoices</h3>
+            <div class="docs__content"><a href="#" class="docs__block">
+                <div class="docs__block__remove">
+                  <div class="remove-block"><span></span></div>
+                </div>
+                <div class="docs__block__img"><img src="img/tick-mark.png" alt=""></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a><a href="#" class="docs__block">
+                <div class="docs__block__remove">
+                  <div class="remove-block"><span></span></div>
+                </div>
+                <div class="docs__block__img"></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a><a href="#" class="docs__block">
+                <div class="docs__block__remove">
+                  <div class="remove-block"><span></span></div>
+                </div>
+                <div class="docs__block__img"></div>
+                <div class="docs__block__title">
+                  <p>How to change filter</p>
+                </div>
+              </a></div>
+          </div>
+          <div class="tabs__content"></div>
+        </div><a href="#upload" data-pop class="docs__add">
+          <p>+</p>
+        </a><a href="#invoices" data-pop class="docs__add docs__add--2">
+          <p>+</p>
+        </a>
+        <div class="pop-up-bg"></div>
+        <div id="invoices" class="docs__pop-up pop-up">
+          <div class="docs__pop-up__title">
+            <h3><a href="#">Upload</a></h3>
+          </div>
+          <ul>
+            <li><a href="#"> <input type="file"><img src="img/profile/gallery.png" alt="">Choose From Library</a></li>
+            <li><a href="#"> <img src="img/profile/camera.png" alt="">Take a Photo</a></li>
+          </ul>
+        </div>
+        <form id="upload" class="docs__pop-up docs__pop-up--upload pop-up">
+          <div class="docs__pop-up__title"><a href="#" class="close">Cancel</a>
+            <h3>File Details</h3><input type="submit" value="Upload">
+          </div>
+          <div class="docs__pop-up__radio">
+            <p>File Type</p>
+            <div class="docs__pop-up__radio__block"><input type="radio" name="radio" id="radio-1" checked><label for="radio-1">Invoice</label></div>
+            <div class="docs__pop-up__radio__block"><input type="radio" name="radio" id="radio-2"><label for="radio-2">Document</label></div>
+          </div>
+          <div class="docs__pop-up__name"><input type="text" placeholder="File Name"></div>
+        </form>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

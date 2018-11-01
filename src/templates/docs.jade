@@ -1,0 +1,90 @@
+---
+title: Docs
+---
+extends layouts/_layout
+block content
+  .docs
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Docs Box
+    .docs__tabs.tabs
+      .tabs__caption
+        ul
+          li.active Invoices
+          li documents
+      .tabs__content.active
+        h3 invoices
+        .docs__content
+          a(href="#").docs__block
+            .docs__block__img
+            .docs__block__title
+              p How to change filter
+          a(href="#").docs__block
+            .docs__block__img
+            .docs__block__title
+              p How to change filter
+          a(href="#").docs__block
+            .docs__block__img
+              img(src="img/tick-mark.png", alt="")
+            .docs__block__title
+              p How to change filter
+        h3 my invoices
+        .docs__content
+          a(href="#").docs__block
+            .docs__block__remove
+              .remove-block
+                span
+            .docs__block__img
+              img(src="img/tick-mark.png", alt="")
+            .docs__block__title
+              p How to change filter
+          a(href="#").docs__block
+            .docs__block__remove
+              .remove-block
+                span
+            .docs__block__img
+            .docs__block__title
+              p How to change filter
+          a(href="#").docs__block
+            .docs__block__remove
+              .remove-block
+                span
+            .docs__block__img
+            .docs__block__title
+              p How to change filter
+      .tabs__content
+    a(href="#upload" data-pop).docs__add
+      p +
+    a(href="#invoices" data-pop).docs__add.docs__add--2
+      p +
+    .pop-up-bg
+    .docs__pop-up.pop-up#invoices
+      .docs__pop-up__title
+        h3
+          a(href="#") Upload
+      ul
+        li
+          a(href="#") 
+            input(type="file")
+            img(src="img/profile/gallery.png", alt="")
+            | Choose From Library
+        li
+          a(href="#") 
+            img(src="img/profile/camera.png", alt="")
+            | Take a Photo
+    form.docs__pop-up.docs__pop-up--upload.pop-up#upload
+      .docs__pop-up__title
+        a(href="#").close Cancel
+        h3 File Details
+        input(type="submit" value="Upload")
+      .docs__pop-up__radio
+        p File Type
+        .docs__pop-up__radio__block
+          input(type="radio" name="radio" id="radio-1" checked)
+          label(for="radio-1") Invoice
+        .docs__pop-up__radio__block
+          input(type="radio" name="radio" id="radio-2")
+          label(for="radio-2") Document
+      .docs__pop-up__name
+        input(type="text" placeholder="File Name")

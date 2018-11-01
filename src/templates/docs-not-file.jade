@@ -1,0 +1,35 @@
+---
+title: Docs
+---
+extends layouts/_layout
+block content
+  .docs
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Docs Box
+    .docs__tabs.tabs
+      .tabs__caption
+        ul
+          li.active Invoices
+          li documents
+      .tabs__content.active
+        h3 invoices
+        .docs__content
+          strong No brand invoices available
+        h3 my invoices
+        .docs__content
+          strong No consumer invoices available. You can add an invoice by clicking on +
+      .tabs__content
+    a(href="#").docs__add
+      p +
+    //- .buy__selected
+    //-   .buy__selected__content
+    //-     .buy__selected__coins
+    //-       i.icon.icon-rupee-indian
+    //-       b
+    //-         i.icon.icon-rupee-indian
+    //-         | 3,650
+    //-     a(href="#") place order (
+    //-       span 1
+    //-       | )
