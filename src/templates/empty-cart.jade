@@ -1,0 +1,15 @@
+---
+title: Empty-cart
+outClass: home-page
+---
+extends layouts/_layout
+block content
+  .empty-cart
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Confirm Order
+    .empty-cart__content
+      img(src="img/empty-cart.png", alt="")
+      p You’ve not selected <br>any products
+      a(href="#") continue shopping

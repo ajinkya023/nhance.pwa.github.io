@@ -1,0 +1,78 @@
+---
+title: Confirm Order
+outClass: home-page
+---
+extends layouts/_layout
+block content
+  .order
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Confirm Order
+    .order__content
+      .order__info
+        span Items (3)
+        strong Total : 
+          i.icon.icon-rupee-indian
+          b 3,650
+      .product-card
+        .product-card__img
+          img(src="img/buy/product-img-01.png", alt="")
+        .product-card__info
+          span AMPEREUS
+          a(href="#") Ro water system fittings, ball valve fittings
+          b 
+            i.icon.icon-rupee-indian
+            | 650
+          span Qty 1
+      .product-card
+        .product-card__img
+          img(src="img/buy/place-holder.png", alt="")
+        .product-card__info
+          span AMPEREUS
+          a(href="#") Ampereus Pre Filter Kit For All Kind R.O./U.V./U.F.
+          b 
+            i.icon.icon-rupee-indian
+            | 39
+          span Qty 1
+      .order__price
+        h3 Price Details
+        ul
+          li
+            b Cart Total
+            span
+              i.icon.icon-rupee-indian
+              | 3,650
+          li
+            b Coupon Discount
+            span
+              i.icon.icon-rupee-indian
+              | 1,825
+          li
+            strong Total Payable
+            p
+              i.icon.icon-rupee-indian
+              | 1,825
+      .order__delivery
+        h3 delivery address
+        p #271, Sri Ganesh Complex, Hosur Main Road, Madiwala, Bangalore - 560068
+        a(href="#")
+          img(src="img/tick-mark.png", alt="")
+          | Change Address
+      .order__payment
+        h3 payment method
+        .order__payment__radio
+          .order__payment__radio__block
+            input(type="radio" name="radio" id="radio-1" checked)
+            label(for="radio-1") Male
+          .order__payment__radio__block
+            input(type="radio" name="radio" id="radio-2")
+            label(for="radio-2") Female
+    .buy__selected
+      .buy__selected__content
+        .buy__selected__coins
+          i.icon.icon-rupee-indian
+          b
+            i.icon.icon-rupee-indian
+            | 1,825
+        a(href="#") place order

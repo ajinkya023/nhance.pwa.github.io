@@ -1,0 +1,93 @@
+---
+title: Shopping cart
+outClass: home-page
+---
+extends layouts/_layout
+block content
+  .order.shopping-cart
+    .block__back
+      a(href="#")
+        i.icon.icon-arrow-right
+      h1 Confirm Order
+    .order__content
+      .order__info
+        span Items (3)
+        strong Total : 
+          i.icon.icon-rupee-indian
+          b 3,650
+      .product-card
+        .product-card__img
+          img(src="img/buy/product-img-01.png", alt="")
+        .product-card__info
+          span AMPEREUS
+          a(href="#") Ro water system fittings, ball valve fittings
+          b 
+            i.icon.icon-rupee-indian
+            | 650
+          .product-card__info__input
+            span Qty
+            input(type="text" value="1")
+            strong 4
+          a(href="#").remove Remove
+      .product-card
+        .product-card__img
+          img(src="img/buy/place-holder.png", alt="")
+        .product-card__info
+          span AMPEREUS
+          a(href="#") Ampereus Pre Filter Kit For All Kind R.O./U.V./U.F.
+          b 
+            i.icon.icon-rupee-indian
+            | 39
+          .product-card__info__input
+            span Qty
+            input(type="text" value="1")
+            strong 4
+          a(href="#").remove Remove
+      .order__payment
+        h3 coupons
+        .order__payment__radio
+          .order__payment__radio__block
+            input(type="radio" name="radio" id="radio-1" checked)
+            label(for="radio-1") Apply GETSETGO and get 50% discount. T&Cs
+          .order__payment__radio__block
+            input(type="radio" name="radio" id="radio-2")
+            label(for="radio-2") Apply PMOSOFG and get ₹300 discount. T&Cs
+          .order__payment__radio__block.order__payment__radio__block--input
+            input(type="radio" name="radio" id="radio-3")
+            label(for="radio-3")
+              input(type="text" placeholder="I have a coupon" disabled="disabled")
+              input(type="submit" value="Apply" disabled="disabled")
+      .order__price
+        h3 Price Details
+        ul
+          li
+            b Cart Total
+            span
+              i.icon.icon-rupee-indian
+              | 3,650
+          li
+            b Coupon Discount
+            span
+              i.icon.icon-rupee-indian
+              | 0
+          li
+            strong Total Payable
+            p
+              i.icon.icon-rupee-indian
+              | 3,650
+    .buy__selected
+      .buy__selected__content
+        .buy__selected__coins
+          i.icon.icon-rupee-indian
+          b
+            i.icon.icon-rupee-indian
+            | 1,825
+        a(href="#order__pop-up" data-pop) select address
+    .pop-up-bg
+    .order__pop-up.pop-up#order__pop-up
+      h2 Terms & Condition
+      ul
+        li *Applicable on orders above Rs ( ₹600 ) Max Discount (₹300) off on Total .
+        li *This coupon can be applied only to selected products.
+        li *This coupon cannot be applied with any o ther coupon.
+      a(href="#").close Ok

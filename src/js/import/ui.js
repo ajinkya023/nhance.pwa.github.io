@@ -32,3 +32,14 @@ $('.product-card__info button').on('click', function(){
     $('.buy__selected').fadeIn();
   }
 })
+
+//radio input
+$('.order__payment__radio__block').on('click', function(){
+  if($(this).find('#radio-3').is(":checked")){
+    $(this).find('label input').removeAttr('disabled')
+  } else if(!$('.order__payment__radio__block').find('label input')){
+  } else{
+    var val = $('.order__payment__radio__block').find('label input').attr('disabled');
+    $('.order__payment__radio__block--input').find('label input').attr('disabled', !val)
+  }
+})
