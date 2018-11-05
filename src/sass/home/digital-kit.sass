@@ -1,6 +1,10 @@
 .digital-kit
+  height: 100vh
   .swiper-digital-kit
     padding: 40px 36px
+    margin-bottom: 60px
+    +rhmin(850)
+      height: calc(100% - 200px) !important
     .swiper-wrapper
       transition-duration: 200ms !important
     .swiper-slide
@@ -19,6 +23,8 @@
     padding-left: 0
     padding-right: 40px
     border-top: 1px solid rgba(#626262, 0.5)
+    +rmin(980)
+      width: 468px
     .swiper-slide
       background: none
       transform: scale(1)
@@ -38,6 +44,11 @@
         left: 50%
         transform: translate(-50%)
   .slide__product
+    height: 100%
+    +rhmin(850)
+      flex-direction: column
+      justify-content: space-between
+      display: flex
     &__logo
       +center
       padding: 20px 0
