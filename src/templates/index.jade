@@ -24,7 +24,7 @@ block content
               .swiper-wrapper
                 .swiper-slide
                   .slide__product__function
-                    a(href="#")
+                    a(href="#input-required" data-pop)
                       .slide__product__function__img
                         img(src="img/digi_loc.svg", alt="")
                       | Digi Locker
@@ -33,19 +33,19 @@ block content
                     a(href="#")
                       .slide__product__function__img
                         img(src="https://via.placeholder.com/40x32.png", alt="")
-                      | Digi Locker
+                      | e-Learning
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/service_location.svg", alt="")
-                      | Digi Locker
+                      | Locations
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/accessories.png", alt="")
-                      | Digi Locker
+                      | Acces
         .swiper-slide
           .slide__product
             .slide__product__logo
@@ -61,7 +61,7 @@ block content
               .swiper-wrapper
                 .swiper-slide
                   .slide__product__function
-                    a(href="#")
+                    a(href="#input-required" data-pop)
                       .slide__product__function__img
                         img(src="img/digi_loc.svg", alt="")
                       | Digi Locker
@@ -70,19 +70,19 @@ block content
                     a(href="#")
                       .slide__product__function__img
                         img(src="https://via.placeholder.com/40x32.png", alt="")
-                      | Digi Locker
+                      | e-Learning
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/service_location.svg", alt="")
-                      | Digi Locker
+                      | Locations
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/accessories.png", alt="")
-                      | Digi Locker
+                      | Acces
         .swiper-slide
           .slide__product
             .slide__product__logo
@@ -98,7 +98,7 @@ block content
               .swiper-wrapper
                 .swiper-slide
                   .slide__product__function
-                    a(href="#")
+                    a(href="#input-required" data-pop)
                       .slide__product__function__img
                         img(src="img/digi_loc.svg", alt="")
                       | Digi Locker
@@ -107,17 +107,30 @@ block content
                     a(href="#")
                       .slide__product__function__img
                         img(src="https://via.placeholder.com/40x32.png", alt="")
-                      | Digi Locker
+                      | e-Learning
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/service_location.svg", alt="")
-                      | Digi Locker
+                      | Locations
                 .swiper-slide
                   .slide__product__function
                     a(href="#")
                       .slide__product__function__img
                         img(src="img/accessories.png", alt="")
-                      | Digi Locker
+                      | Acces
+    .pop-up-bg
+    form.digital-kit__pop-up.pop-up#input-required
+      .digital-kit__pop-up__title
+        a(href="#").close Cancel
+        h3 File Details
+        button Continue
+      .digital-kit__pop-up__content
+        .digital-kit__pop-up__input
+          input(type="text" placeholder="Product Price")
+        .digital-kit__pop-up__input
+          input(type="text" placeholder="Product Date")
+          a(href="#")
+            img(src="img/profile/calendar.png", alt="")
   include ./partials/_footer
