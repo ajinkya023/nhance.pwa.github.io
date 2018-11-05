@@ -5,7 +5,8 @@ $('select').selectize();
 
 //pop-up
   //pop-up open
-  $('[data-pop]').on('click', function() {
+  $('[data-pop]').on('click', function(event) {
+    event.preventDefault();
     let href = $(this).attr('href');
     $(href).fadeIn();
     $('.pop-up-bg').fadeIn()
@@ -15,7 +16,20 @@ $('select').selectize();
   $('.close, .pop-up-bg').on('click', function(event) {
     event.preventDefault();
     $('.pop-up, .pop-up-bg').fadeOut();
+    $('.header').removeClass('active')
+    $('.header a').find('img').attr('src', 'img/add_product.svg')
   });
+  //menu digital-kit
+    $('.header a').on('click', function(){
+      if($(this).parent('.header').hasClass('active')){
+        $(this).parent('.header').removeClass('active')
+        $('.pop-up, .pop-up-bg').fadeOut();
+        $(this).find('img').attr('src', 'img/add_product.svg')
+      } else{
+        $(this).parent('.header').addClass('active')
+        $(this).find('img').attr('src', 'img/add_product_white.svg')
+      }
+    })
 
 //tabs
 $('.tabs__caption').on('click', 'li:not(.active)', function() {

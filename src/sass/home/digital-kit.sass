@@ -94,6 +94,13 @@
     bottom: 0
     left: 0
     background: $white
+    &.help-desk
+      padding-bottom: 15px
+      .digital-kit__pop-up__title
+        justify-content: center
+        a
+          position: absolute
+          left: 24px
     &__title
       width: 100%
       height: 70px
@@ -115,6 +122,24 @@
         font-weight: 600
     &__content
       padding: 0px 30px 70px
+    &__block
+      border-bottom: 1px solid rgba(#bdbdbd, 0.5)
+      padding: 20px 0
+      &:last-child
+        border-bottom: none
+      a
+        font-size: 19.5px
+        line-height: 1.03
+        color: #131c2e
+        padding-left: 55px
+        position: relative
+        display: block
+        img
+          position: absolute
+          right: 60px
+          width: 36px
+          top: 50%
+          transform: translate(0, -50%)
     &__input
       position: relative
       input
@@ -132,3 +157,61 @@
         bottom: 3px
         img
           width: 24px
+  &__menu
+    position: absolute
+    top: 85px
+    left: 0
+    margin: 0 28px
+    width: calc(100% - 56px)
+    background-color: #ffffff
+    border-radius: 10px
+    &:before
+      content: ''
+      border: 15px solid transparent
+      border-right: 20px solid #ffffff
+      position: absolute
+      right: 0
+      top: -15px
+    &__block
+      display: flex
+      align-items: center
+      padding: 30px 65px
+      padding-right: 40px
+      &:last-child
+        background-color: #f5f5f5
+        border-top: 1px solid rgba(0, 0, 0, 0.4)
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+      &__img
+        height: 70px
+        padding-right: 52px
+        +center
+        img
+          height: 100%
+      &__text
+        h3
+          font-size: 25.5px
+          font-weight: 600
+          color: #f2015b
+          position: relative
+          padding-bottom: 15px
+          margin-bottom: 25px
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 24px
+            height: 4px
+            border-radius: 2px
+            background-color: #f2015b
+        strong
+          font-size: 19.5px
+          font-weight: normal
+          color: #131c2e
+          display: block
+          margin-bottom: 15px
+        p
+          font-size: 18px
+          line-height: 1.39
+          color: #9e9e9e
