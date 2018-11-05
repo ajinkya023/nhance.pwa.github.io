@@ -68,6 +68,7 @@
     "lodash": "^4.3.0"
   },
   "dependencies": {
+    "object-fit-images": "^3.2.4",
     "swiper": "^4.4.1"
   }
 }
