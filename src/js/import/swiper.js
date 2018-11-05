@@ -18,7 +18,7 @@ var swiper2 = new Swiper('.swiper-scroll', {
   direction: 'horizontal',
   slidesPerView: 'auto',
   freeMode: true,
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 0,
   mousewheel: true,
 });
