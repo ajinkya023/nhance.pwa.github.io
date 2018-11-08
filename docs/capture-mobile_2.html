@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Product Registration</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=540, minimum-scale=0.3, maximum-scale=1.6, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <div class="capture-mobile_2">
+        <div class="block__back">
+          <h1>Product Registration</h1>
+        </div>
+        <div class="capture-mobile_2__details">
+          <h2>Product Details</h2>
+          <form class="capture-mobile_2__form">
+            <div class="capture-mobile_2__form__select"><span>Select Brand</span><select>
+                <option value="1">Jubliee</option>
+                <option value="2">Jubliee2</option>
+                <option value="3">Jubliee3</option>
+              </select></div>
+            <div class="capture-mobile_2__form__code"><input type="number" name="code" id="code" required><label for="code">Scan Code / Enter Unique Number</label><a href="#"><img src="img/product_registration.svg" alt=""></a></div>
+            <div class="capture-mobile_2__form__invalid">
+              <p> <img src="img/error.svg" alt="">Unique code already registered</p>
+            </div><input type="submit" value="validate">
+            <div class="capture-mobile_2__form__check">
+              <p>
+                We're validating your unique code</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+---
+title: Product Registration
+---
+extends layouts/_layout
+block content
+  .capture-mobile_2
+    .block__back
+      h1 Product Registration
+    .capture-mobile_2__details
+      h2 Product Details
+      form.capture-mobile_2__form
+        .capture-mobile_2__form__select
+          span Select Brand
+          select
+            option(value="1") Jubliee
+            option(value="2") Jubliee2
+            option(value="3") Jubliee3
+        .capture-mobile_2__form__code
+          input(type="number" name="code" id="code" required)
+          label(for="code") Scan Code / Enter Unique Number
+          a(href="#")
+            img(src="img/product_registration.svg", alt="")
+        .capture-mobile_2__form__invalid
+          p 
+            img(src="img/error.svg", alt="")
+            | Unique code already registered
+        input(type="submit" value="validate")
+        .capture-mobile_2__form__check
+          p 
+            | We're validating your unique code

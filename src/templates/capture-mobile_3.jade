@@ -1,0 +1,45 @@
+---
+title: Product Registration
+---
+extends layouts/_layout
+block content
+  .capture-mobile_3
+    .block__back
+      h1 Product Registration
+    .capture-mobile_3__details
+      h2 Product Details
+      form.capture-mobile_3__form
+        .capture-mobile_3__form__select
+          span Select Brand
+          select
+            option(value="1") Jubliee
+            option(value="2") Jubliee2
+            option(value="3") Jubliee3
+        .capture-mobile_3__form__code
+          input(type="number" name="code" id="code" value="1071322141")
+          label(for="code") Scan Code / Enter Unique Number
+          a(href="#").close-code
+            img(src="img/close_without_circle.svg", alt="")
+        .capture-mobile_3__form__device
+          .capture-mobile_3__form__device__img
+            img(src="img/mac.png", alt="")
+          .capture-mobile_3__form__device__name
+            b MacBook Pro Retina 2018
+        .capture-mobile_3__form__date
+          input(type="text" name="date" id="date" data-date-format="DD dd MM yyyy" required).my-datepicker
+          label(for="date") Purchase Date
+            span
+              img(src="img/calendar.svg", alt="")
+        .capture-mobile_3__form__download
+          input(type="file" id="file")
+          label(for="file") 
+            img(src="img/document.svg", alt="")
+            | attach Invoice Copy
+        .capture-mobile_3__form__file
+          a(href="#").docs__block
+            .docs__block__remove
+              .remove-block
+                span
+            .docs__block__img
+              img(src="img/tick-mark.svg", alt="")
+        input(type="submit" value="submit")

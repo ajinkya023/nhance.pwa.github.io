@@ -1,0 +1,103 @@
+.capture-mobile_2
+  h2
+    font-size: 21px
+    font-weight: 600
+    color: #131c2e
+    margin-bottom: 24px
+    text-transform: uppercase
+  &__details
+    padding: 24px
+    padding-top: 40px
+  &__form
+    border-radius: 5px
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.13)
+    border: solid 0.5px #bfbfbf
+    background-color: #ffffff
+    padding: 30px
+    &__select
+      padding-bottom: 40px
+      span
+        font-size: 18px
+        color: #9e9e9e
+        display: block
+      .selectize-input
+        box-shadow: none
+        border: none
+        border-bottom: 1px solid #bdbdbd
+        padding: 15px 0
+      .selectize-input>*, .selectize-dropdown [data-selectable]
+        font-family: 'SF UI Display', sans-serif
+        font-size: 21px
+        font-weight: 600
+        color: #131c2e
+      .selectize-dropdown [data-selectable]
+        padding: 15px 10px
+      .selectize-input>input
+        display: none !important
+      .selectize-input:after
+        border-width: 8px 10px 0 !important
+      .selectize-input.dropdown-active:after
+        border-width: 0px 10px 8px !important
+    &__code
+      position: relative
+      input
+        width: 100%
+        font-size: 21px
+        font-weight: 600
+        padding: 12px 0
+        color: #131c2e
+        border-bottom: 1px solid #bdbdbd
+        +placeholder-color(#131c2e)
+        &.invalid
+          border-bottom: 1px solid #fd3e39
+        & + label
+          position: absolute
+          left: 0
+          top: 0px
+          font-size: 21px
+          color: #9e9e9e
+          padding: 12px 0
+          transition: transform 100ms ease
+        &:valid + label
+          transform: translateY(-25px)
+          font-size: 18px
+        &:focus
+          & + label
+            transform: translateY(-25px)
+            font-size: 18px
+      a
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translate(0, -50%)
+        img
+          width: 36px
+    &__invalid
+      padding-top: 30px
+      p
+        font-size: 18px
+        font-weight: 600
+        color: #fd3e39
+        +center-y
+        img
+          margin-right: 10px
+          width: 25px
+    input[type="submit"]
+      font-size: 18px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      border-radius: 30px
+      background-color: #131c2e
+      padding: 20px 70px
+      line-height: 1
+      margin-top: 40px
+      position: relative
+      left: 100%
+      transform: translate(-100%)
+    &__check
+      padding-top: 30px
+      p
+        font-size: 18px
+        font-weight: 600
+        color: #f2015b
