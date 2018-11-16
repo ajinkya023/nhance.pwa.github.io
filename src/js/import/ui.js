@@ -1,24 +1,25 @@
 import '../lib/selectize.min.js';
-import datepicker from 'air-datepicker';
+import mobiscroll from '../lib/mobiscroll.jquery.min.js';
+// import datepicker from 'air-datepicker';
 
-//datepicker
-;(function ($) { $.fn.datepicker.language['en'] = {
-  days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  daysMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
-  monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  today: 'Today',
-  clear: 'Clear',
-  dateFormat: 'mm dd yyyy',
-  timeFormat: 'hh:ii aa',
-  firstDay: 0
-}; })(jQuery);
+// //datepicker
+// ;(function ($) { $.fn.datepicker.language['en'] = {
+//   days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+//   daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+//   daysMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+//   months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+//   monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+//   today: 'Today',
+//   clear: 'Clear',
+//   dateFormat: 'mm dd yyyy',
+//   timeFormat: 'hh:ii aa',
+//   firstDay: 0
+// }; })(jQuery);
 
-$('.my-datepicker').datepicker({
-  language: 'en',
-  minDate: new Date()
-});
+// $('.my-datepicker').datepicker({
+//   language: 'en',
+//   minDate: new Date()
+// });
 
 
 //select
@@ -85,4 +86,38 @@ $('.order__payment__radio__block').on('click', function(){
 var pass = $('input[type="password"]');
 $('.password-show').click(function() {
   pass.attr('type', pass.attr('type') === 'password' ? 'text' : 'password');
+});
+
+//data
+mobiscroll.settings = {
+  theme: 'ios',
+      lang: 'en'
+};
+$(function () {
+// Mobiscroll Date & Time initialization
+$('#date').mobiscroll().date({
+  dateFormat: "DD dd MM yy"
+});
+    
+// Mobiscroll Date & Time initialization
+$('#demo-header').mobiscroll().date({
+    headerText: false,
+});
+
+// Mobiscroll Date & Time initialization
+$('#demo-non-form').mobiscroll().date();
+
+// Mobiscroll Date & Time initialization
+$('#demo-external').mobiscroll().date({
+    showOnTap: false,
+    showOnFocus: false,
+    onInit: function (event, inst) {
+        inst.setVal(new Date(), true);
+    }
+});
+
+$('#show').click(function () {
+    $('#demo-external').mobiscroll('show');
+    return false;
+});
 });
