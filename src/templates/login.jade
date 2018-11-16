@@ -1,0 +1,33 @@
+---
+title: Login
+---
+extends layouts/_layout
+block content
+  form.login
+    .login__logo
+      img(src="img/nhance-icon.png", alt="")
+    .login__title
+      h1 Hey, Good Morning!
+      p Start simplifying your life
+    h2 sign in
+    .login__form
+      .form__phone
+        .form__phone__select
+          select
+            option(value="1") IN
+            option(value="2") eng
+            option(value="3") IN
+        .form__phone__number
+          input(type="number" name="phone" placeholder="Mobile")
+          a(href="#")
+            img(src="img/switch-to-mobile.png", alt="")
+      .form__block
+        input(type="password" placeholder="Password")
+        a(href="#")
+          i.icon.icon-eye
+      .form__forget
+        a(href="#") Forgot Password?
+    .login__footer
+      span No account yet? 
+        a(href="#") Sign Up
+      a(href="#").btn sign in

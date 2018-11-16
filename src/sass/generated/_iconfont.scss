@@ -10,8 +10,9 @@
 }
 
 $icon-arrow-right: "\EA01";
-$icon-rupee-indian: "\EA02";
-$icon-search: "\EA03";
+$icon-eye: "\EA02";
+$icon-rupee-indian: "\EA03";
+$icon-search: "\EA04";
 
 
 %icon {
@@ -31,5 +32,6 @@ $icon-search: "\EA03";
 }
 
 .icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-eye:before { content: $icon-eye; }
 .icon-rupee-indian:before { content: $icon-rupee-indian; }
 .icon-search:before { content: $icon-search; }
