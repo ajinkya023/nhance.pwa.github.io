@@ -78,3 +78,11 @@ $('.order__payment__radio__block').on('click', function(){
     $('.order__payment__radio__block--input').find('label input').attr('disabled', !val)
   }
 })
+
+
+
+//password
+var pass = $('input[type="password"]');
+$('.password-show').click(function() {
+  pass.attr('type', pass.attr('type') === 'password' ? 'text' : 'password');
+});
